@@ -1,9 +1,5 @@
 "use strict";
-let msg = "Hello World";
-let hero = {
-    name: "Batman",
-    age: 35,
-    superpower: "Null",
-};
-hero.age = hero.age + 5;
-console.log(hero);
+(() => {
+    let a = 10;
+    console.log(a);
+})();
