@@ -1,3 +1,5 @@
+//tratar de evitar este tipo lo mas posible, siempre que podamos hay que usar un tipado estricto. ya que por esto estamos usando typescript
+
 (() => {
   let aliens: any = 15;
   let exits;

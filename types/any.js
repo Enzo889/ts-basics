@@ -1,4 +1,5 @@
 "use strict";
+//tratar de evitar este tipo lo mas posible, siempre que podamos hay que usar un tipado estricto. ya que por esto estamos usando typescript
 (() => {
     let aliens = 15;
     let exits;
