@@ -1,39 +1,41 @@
 (() => {
+  // Tipos
+  const batman: string = "Bruce";
+  const superman: string = "Clark";
 
-    // Tipos
-    const batman = 'Bruce';
-    const superman = 'Clark';
-  
-    const existe = false;
-  
-    // Tuplas
-    const parejaHeroes = [batman,superman];
-    const villano = ['Lex Lutor',5,true];
-  
-    // Arreglos
-    const aliados = ['Mujer Maravilla','Acuaman','San', 'Flash'];
-  
-    //Enumeraciones
-    const fuerzaFlash = 5;
-    const fuerzaSuperman = 100;
-    const fuerzaBatman = 1;
-    const fuerzaAcuaman = 0;
-  
-    // Retorno de funciones
-    function activar_batiseñal(){
-      return 'activada';
-    }
-  
-    function pedir_ayuda(){
-      console.log('Auxilio!!!');
-    }
-  
-    // Aserciones de Tipo
-    const poder: any = '100';
-    const largoDelPoder:number = poder.length;
-    console.log( largoDelPoder );
-  
-  
-  })()
-  
-  
+  const existe: boolean = false;
+
+  // Tuplas
+  const parejaHeroes: [string, string] = [batman, superman];
+  const villano: [string, number, boolean] = ["Lex Lutor", 5, true];
+
+  // Arreglos
+  const aliados: string[] = ["Mujer Maravilla", "Acuaman", "San", "Flash"];
+
+  //Enumeraciones
+
+  enum power {
+    acuamanPower = 0,
+    batmanPower = 1,
+    flashPower = 5,
+    supermanPower = 100,
+  }
+  const fuerzaFlash: power = power.flashPower;
+  const fuerzaSuperman: power = power.supermanPower;
+  const fuerzaBatman: power = power.batmanPower;
+  const fuerzaAcuaman: power = power.acuamanPower;
+
+  // Retorno de funciones
+  function activar_batiseñal(): string {
+    return "activada";
+  }
+
+  function pedir_ayuda(): void {
+    console.log("Auxilio!!!");
+  }
+
+  // Aserciones de Tipo
+  const poder: any = "100";
+  const largoDelPoder: number = (poder as string).length;
+  console.log(largoDelPoder);
+})();
