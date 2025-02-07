@@ -9,7 +9,7 @@
     // "disableSolutionSearching": true,                 /* Opt a project out of multi-project reference checking when editing. */
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
     /* Language and Environment */
-    "target": "es2016", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "ES6", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
@@ -91,9 +91,9 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   // aca se puede indicar que archivos se deben incluir en el build o excluir
-  // "include": [
-  //   "./**/*.ts"
-  // ],
+  "include": [
+    "ES6"
+  ],
   // se indican el directorio donde se deben buscar los archivos de tipo ts
   "exclude": [
     "node_modules",
