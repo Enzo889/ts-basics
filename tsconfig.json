@@ -92,7 +92,7 @@
   },
   // aca se puede indicar que archivos se deben incluir en el build o excluir
   "include": [
-    "interfaces"
+    "namespaces"
   ],
   // se indican el directorio donde se deben buscar los archivos de tipo ts
   "exclude": [
