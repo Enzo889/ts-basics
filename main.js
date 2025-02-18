@@ -7,7 +7,11 @@ var Validations;
     Validations.validateDate = (date) => {
         return isNaN(date.valueOf()) ? false : true;
     };
+    Validations.validateEmail = (email) => {
+        return email.includes("@") ? true : false;
+    };
 })(Validations || (Validations = {}));
 console.log(Validations.validateDate(new Date()));
 console.log(Validations.validateString("abcdef"));
+console.log(Validations.validateEmail("enzo@dsads.com"));
 //# sourceMappingURL=main.js.map
